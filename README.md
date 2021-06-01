@@ -282,6 +282,8 @@ The component use `Font Awesome 5 Free` as default, but you can either customize
     <div slot="footer">footer</div>
     <span slot="toggle-icon">toggle-icon</span>
     <span slot="dropdown-icon">dropdown-icon</span>
+    <!-- add menu item icon slot -->
+    <span slot="menu-item-icon">menu-item-icon</span> 
 </sidebar-menu>
 ```
 

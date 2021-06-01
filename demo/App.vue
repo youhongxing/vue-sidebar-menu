@@ -37,7 +37,11 @@
         :show-one-child="true"
         @toggle-collapse="onToggleCollapse"
         @item-click="onItemClick"
-      />
+      >
+        <template slot="menu-item-icon" slot-scope="{ data }">
+           123{{data}}
+        </template>
+      </sidebar-menu>
       <div
         v-if="isOnMobile && !collapsed"
         class="sidebar-overlay"

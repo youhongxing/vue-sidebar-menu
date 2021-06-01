@@ -30,6 +30,10 @@
           @unset-mobile-item="unsetMobileItem"
         >
           <slot
+            slot="menu-item-icon"
+            name="menu-item-icon"
+          />
+          <slot
             slot="dropdown-icon"
             name="dropdown-icon"
           />

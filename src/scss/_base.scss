@@ -199,3 +199,9 @@
       line-height: $icon-height !important;
     }
   }
+
+  .vsm--menu-icon {
+    &_slot {
+      display: none !important;
+    }
+  }

@@ -25,9 +25,11 @@
       :attributes="item.attributes"
       @click.native="clickEvent"
     >
+      <slot name="menu-item-icon" />
       <sidebar-menu-icon
         v-if="item.icon && !isMobileItem"
         :icon="item.icon"
+        :class="{'vsm--menu-icon_slot' : $slots['menu-item-icon']}"
       />
       <transition
         name="fade-animation"
@@ -76,6 +78,10 @@
                 :rtl="rtl"
                 :is-collapsed="isCollapsed"
               >
+                <slot
+                  slot="menu-item-icon"
+                  name="menu-item-icon"
+                />
                 <slot
                   slot="dropdown-icon"
                   name="dropdown-icon"

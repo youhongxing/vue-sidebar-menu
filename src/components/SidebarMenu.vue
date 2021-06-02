@@ -30,6 +30,7 @@
           @unset-mobile-item="unsetMobileItem"
         >
           <slot
+            :data="item"
             slot="menu-item-icon"
             name="menu-item-icon"
           />

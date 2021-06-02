@@ -25,7 +25,7 @@
       :attributes="item.attributes"
       @click.native="clickEvent"
     >
-      <slot name="menu-item-icon" />
+      <slot name="menu-item-icon" v-if="item.icon && !isMobileItem" />
       <sidebar-menu-icon
         v-if="item.icon && !isMobileItem"
         :icon="item.icon"
